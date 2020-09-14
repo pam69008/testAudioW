@@ -2,6 +2,7 @@ import React from 'react';
 import Container from '@material-ui/core/Container';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 
 export const Names = ({formData, setForm, navigation}) => {
     const {firstName, lastName} = formData;
@@ -26,14 +27,15 @@ export const Names = ({formData, setForm, navigation}) => {
                placeholder = "Nom"
                style= {{marginLeft: "5px"}}
                />
-                <Button 
+                <ArrowRightAltIcon 
+                type= "button"
                 variant = "contained"  
                 fullWidth 
                 color = "inherit"
                 onClick={() => navigation.next()}
                 > 
                 =>
-                </Button>
+                </ArrowRightAltIcon>
 </Container>
 </div>
     )

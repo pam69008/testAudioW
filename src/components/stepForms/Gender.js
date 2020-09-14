@@ -3,6 +3,7 @@ import Container from '@material-ui/core/Container';
 import TextField from '@material-ui/core/TextField';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import Button from '@material-ui/core/Button';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 export const Gender = ({formData, setForm, navigation}) => {
     const {man, girl} = formData;
@@ -25,7 +26,6 @@ export const Gender = ({formData, setForm, navigation}) => {
                     </ButtonGroup>
                     <ButtonGroup color="primary" aria-label="outlined primary button group">
                     <Button 
-                
                         name = "girl" 
                         style= {{marginLeft: "170px"}}
                         margin= "normal"
@@ -38,14 +38,14 @@ export const Gender = ({formData, setForm, navigation}) => {
                             Femme
                     </Button>
                 </ButtonGroup>
-                <Button
-                fullWidth 
+                <ArrowBackIcon
+                type= "button"
                 style = {{marginTop: "1rem"}}
                 color = "inherit"
                 variant = "contained"
                 onClick={() => navigation.previous()}>
                     Retour
-                </Button>
+                </ArrowBackIcon>
             </Container>
         </div>
     )
