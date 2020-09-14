@@ -17,6 +17,7 @@ export const Gender = ({formData, setForm, navigation}) => {
                         value = {formData.man} 
                         onClick={() => {
                             navigation.next();
+                            formData.gender = 'Monsieur'
                           }}  
                     >
                         Homme
@@ -31,6 +32,7 @@ export const Gender = ({formData, setForm, navigation}) => {
                         value = {formData.girl}
                         onClick={() => {
                             navigation.next();
+                            formData.gender = 'Madame'
                           }}
                         >
                             Femme

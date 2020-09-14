@@ -7,8 +7,7 @@ import {Results} from './stepForms/Results'
 const defaultData = {
     firstName: '',
     lastName: '',
-    man: '',
-    girl: '',
+    gender: ''
 }
 const steps = [
     {id: "names"},
@@ -30,9 +29,4 @@ const props = { formData, setForm, navigation}
         case "results": 
             return <Results { ...props } />;
     }
-    return (
-        <div>
-            <h1> Multi </h1>
-        </div> 
-    )
 }
