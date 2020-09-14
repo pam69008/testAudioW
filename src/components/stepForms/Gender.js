@@ -13,8 +13,11 @@ export const Gender = ({formData, setForm, navigation}) => {
                 <ButtonGroup color="primary" aria-label="outlined primary button group">
                     <Button 
                         name = "man" 
-                        value = {man} 
-                        onClick={() => navigation.next()}    
+                        style= {{marginRight: "50px"}}
+                        value = {formData.man} 
+                        onClick={() => {
+                            navigation.next();
+                          }}  
                     >
                         Homme
                     </Button>
@@ -23,8 +26,12 @@ export const Gender = ({formData, setForm, navigation}) => {
                     <Button 
                 
                         name = "girl" 
-                        value = {girl}
-                        onClick={() => navigation.next()}
+                        style= {{marginLeft: "170px"}}
+                        margin= "normal"
+                        value = {formData.girl}
+                        onClick={() => {
+                            navigation.next();
+                          }}
                         >
                             Femme
                     </Button>
@@ -33,7 +40,7 @@ export const Gender = ({formData, setForm, navigation}) => {
                 fullWidth 
                 style = {{marginTop: "1rem"}}
                 color = "inherit"
-                variant = "contained"  
+                variant = "contained"
                 onClick={() => navigation.previous()}>
                     Retour
                 </Button>

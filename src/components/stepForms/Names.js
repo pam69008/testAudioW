@@ -7,7 +7,7 @@ export const Names = ({formData, setForm, navigation}) => {
     const {firstName, lastName} = formData;
     return (
         <div>
-        <h1 className = "text-center">Peux tu indiquer l'identité du patient ?</h1>
+        <h1 className = "text-center">Peux-tu indiquer l'identité du patient ?</h1>
 <Container maxWidth="xs">
                <TextField
                name = "firstName"
@@ -24,6 +24,7 @@ export const Names = ({formData, setForm, navigation}) => {
                margin = "normal"
                variant = "outlined"
                placeholder = "Nom"
+               style= {{marginLeft: "5px"}}
                />
                 <Button 
                 variant = "contained"  
